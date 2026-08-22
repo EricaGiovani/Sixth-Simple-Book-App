@@ -10,3 +10,6 @@
  * ========================================================================== */
 
 // Tulis import dan array books kamu di bawah ini:
+import {type Book} from "../types/index";
+
+export const books: Book[] = [];
