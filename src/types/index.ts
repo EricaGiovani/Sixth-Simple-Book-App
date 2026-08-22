@@ -11,3 +11,9 @@
  * ========================================================================== */
 
 // Tulis definisi tipe Book kamu di bawah ini:
+
+export type Book = {
+  title: string;
+  author: string;
+  publicationYear: number;
+}
