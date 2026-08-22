@@ -14,6 +14,8 @@
  * ========================================================================== */
 
 // Tulis import kamu di bawah ini:
+import {type Book} from "../types/index";
+import { books } from "../data/books"
 
 
 /* ----------------------------------------------------------------------------
@@ -24,6 +26,10 @@
  * -------------------------------------------------------------------------- */
 
 // Tulis fungsi addBook di bawah ini:
+export function addBook(book: Book): void{
+  books.push(book)
+  console.log(`"${book.title}" Book has been successfully added!`)
+}
 
 
 /* ----------------------------------------------------------------------------
