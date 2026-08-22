@@ -45,7 +45,16 @@ export function addBook(book: Book): void{
  * -------------------------------------------------------------------------- */
 
 // Tulis fungsi listBooks di bawah ini:
-
+export function listBooks(): void {
+  if (books.length === 0) {
+    console.log("There is no book yet");
+    return;
+  }
+  console.log("Book List:");
+  books.forEach((book, index) => {
+    console.log(`${index + 1}. ${book.title} - ${book.author} (${book.publicationYear})`);
+  });
+}
 
 /* ----------------------------------------------------------------------------
  * FUNGSI 3 — searchBook
