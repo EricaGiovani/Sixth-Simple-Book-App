@@ -16,3 +16,15 @@ console.log('Book Management Application - Week 6');
 console.log('=====================================');
 
 // Mulai pengujian di bawah ini:
+listBooks();
+
+addBook({
+  title: "Clean Code",
+  author: "Robert C. Martin",
+  publicationYear: 2008
+});
+
+listBooks();
+searchBook("clean");
+searchBook("erica");
+searchBook();
