@@ -9,6 +9,7 @@
  * ========================================================================== */
 
 // Tulis import kamu di bawah ini:
+import { addBook, listBooks, searchBook} from "./functions/bookManager";
 
 
 console.log('Book Management Application - Week 6');

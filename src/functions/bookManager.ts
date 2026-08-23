@@ -70,6 +70,23 @@ export function listBooks(): void {
  * -------------------------------------------------------------------------- */
 
 // Tulis fungsi searchBook di bawah ini:
+export function searchBook(title?: string): void {
+  if (!title){
+    listBooks();
+    return;
+  }
+
+  const foundBook = books.find((book) => {
+    return book.title.toLowerCase().includes(title.toLowerCase());
+  });
+
+  if (foundBook) {
+    console.log(`${foundBook.title} - ${foundBook.author} (${foundBook.publicationYear})`);
+  }else{
+    console.log(`A book with the title "${title}" was not found.`)
+  }
+}
+
 
 
 /* ----------------------------------------------------------------------------
