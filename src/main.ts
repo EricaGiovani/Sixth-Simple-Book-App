@@ -23,8 +23,13 @@ addBook({
   author: "Robert C. Martin",
   publicationYear: 2008
 });
+addBook({
+  title: "The Pragmatic Programmer",
+  author: "Andrew Hunt",
+  publicationYear: 1999
+});
 
 listBooks();
-searchBook("clean");
-searchBook("erica");
+searchBook("programmer");
+searchBook("xyz");
 searchBook();

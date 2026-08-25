@@ -28,7 +28,7 @@ import { books } from "../data/books"
 // Tulis fungsi addBook di bawah ini:
 export function addBook(book: Book): void{
   books.push(book)
-  console.log(`"${book.title}" Book has been successfully added!`)
+  console.log(`Buku "${book.title}" berhasil ditambahkan!`)
 }
 
 
@@ -46,14 +46,16 @@ export function addBook(book: Book): void{
 
 // Tulis fungsi listBooks di bawah ini:
 export function listBooks(): void {
-  if (books.length === 0) {
-    console.log("There is no book yet");
+      if (books.length === 0) {
+      console.log("Belum tersedia buku.");
     return;
   }
-  console.log("Book List:");
+  console.log('=====================================');
+  console.log("Daftar Buku:");
   books.forEach((book, index) => {
     console.log(`${index + 1}. ${book.title} - ${book.author} (${book.publicationYear})`);
   });
+  console.log('=====================================');
 }
 
 /* ----------------------------------------------------------------------------
@@ -81,9 +83,9 @@ export function searchBook(title?: string): void {
   });
 
   if (foundBook) {
-    console.log(`${foundBook.title} - ${foundBook.author} (${foundBook.publicationYear})`);
+    console.log(`Hasil pencarian "${title}" : ${foundBook.title} - ${foundBook.author} (${foundBook.publicationYear})`);
   }else{
-    console.log(`A book with the title "${title}" was not found.`)
+    console.log(`Buku dengan judul "${title}" tidak ditemukan.`)
   }
 }
 
