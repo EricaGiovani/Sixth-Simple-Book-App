@@ -70,16 +70,16 @@ Kerjakan berurutan. Setiap langkah bergantung pada langkah sebelumnya.
 
 ## Checklist Penyelesaian
 
-- [ ] Tipe `Book` dibuat dengan type alias, punya `title`, `author`, `publicationYear`
-- [ ] `publicationYear` bertipe angka, bukan teks
-- [ ] Array `books` dibuat dengan tipe `Book[]` yang eksplisit
-- [ ] `addBook()` menambahkan buku ke array dan menampilkan konfirmasi
-- [ ] `listBooks()` menampilkan semua buku dengan format yang mudah dibaca
-- [ ] `listBooks()` tetap memberi pesan yang jelas saat daftar masih kosong
-- [ ] `searchBook()` punya parameter `title` yang opsional (`?`)
-- [ ] `searchBook()` menangani tiga kasus: ketemu, tidak ketemu, dan tanpa argumen
-- [ ] Ketiga fungsi punya return type `void` yang ditulis eksplisit
-- [ ] `npm run typecheck` bersih, tanpa satu pun error
+- [Done] Tipe `Book` dibuat dengan type alias, punya `title`, `author`, `publicationYear`
+- [Done] `publicationYear` bertipe angka, bukan teks
+- [Done] Array `books` dibuat dengan tipe `Book[]` yang eksplisit
+- [Done] `addBook()` menambahkan buku ke array dan menampilkan konfirmasi
+- [Done] `listBooks()` menampilkan semua buku dengan format yang mudah dibaca
+- [Done] `listBooks()` tetap memberi pesan yang jelas saat daftar masih kosong
+- [Done] `searchBook()` punya parameter `title` yang opsional (`?`)
+- [Done] `searchBook()` menangani tiga kasus: ketemu, tidak ketemu, dan tanpa argumen
+- [Done] Ketiga fungsi punya return type `void` yang ditulis eksplisit
+- [Done] `npm run typecheck` bersih, tanpa satu pun error
 
 ## Kriteria Penilaian
 
